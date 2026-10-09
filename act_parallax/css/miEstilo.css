@@ -1,0 +1,87 @@
+:root{
+   --rosa-neon: #e6007e;  
+   --verde-neon: #39ff14;
+   --negro-gotico: #0a0a0a;
+   --blanco-hueso: #f4f4f4;
+    --morado-oscuro: #2e003e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+    background-color: var(--negro-gotico);
+    color: var(--blanco-hueso);
+}
+.contenido{
+    height: 100vh;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+#inicio{
+    background-image: url('../images/Inicio.jpg');
+}
+
+#acerca{
+    background-image: url('../images/acerca.jpg');
+}
+
+#alien{
+    background-image: url('../images/Alien.jpg');
+}
+
+#boogie{
+    background-image: url('../images/Oogie.jpg');
+}
+
+#emily{
+    background-image: url('../images/Emily.jpg');
+}
+
+#krampus{
+    background-image: url('../images/Krampus.jpg');
+}
+
+#myers{
+    background-image: url('../images/Myers.jpg');
+}
+
+nav{
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    background-color: rgba(10, 10, 10, 0.85);
+    padding: 10px 18px;
+}
+ul a{
+    display: block;
+    color: var(--blanco-hueso);
+    text-decoration: none; /*Quitar la linea inferior*/
+    padding: 10px 16px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    transition: 0.4s ease;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+a:hover{
+    transform: translateY(-10%);
+    background-color: var(--rosa-neon);
+    color: var(--blanco-hueso);
+}
+
+
